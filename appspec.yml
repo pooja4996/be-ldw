@@ -1,0 +1,6 @@
+version: 0.0
+os: linux
+files:
+  - source: traffic-count-api/target/traffic-count-api.war
+    destination: /opt/tomcat/webapps
+file_exists_behavior: OVERWRITE
