@@ -1,12 +1,17 @@
 version: 0.2
+
+
+
 phases:
-    install:
-      java: corretto11
     build:
       commands:
-        - echo Build started on `date`
+        - echo "Entered into Build Stage..."
+        - echo "Building Package"
         - mvn clean package
+    post_build:
+      commands:
+        - echo "Build Stage Completed..."
 artifacts:
       files:
-        - appspec.yml
-        - traffic-count-api/target/traffic-count-api.war
+        - target/traffic-count-api.jar
+      discard-paths: yes

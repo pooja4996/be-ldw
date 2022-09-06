@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.wsa</groupId>
+		<artifactId>traffic-count</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>		
+	<artifactId>traffic-count-api</artifactId>
+	<name>traffic-count-api</name>
+	<description>Api Module</description>
+	<properties>
+		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.wsa</groupId>
+			<artifactId>tarffic-count-service</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.wsa</groupId>
+			<artifactId>traffic-count-persistence</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.wsa</groupId>
+			<artifactId>traffic-count-domain</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>traffic-count-api</finalName>
+	</build>
+</project>
