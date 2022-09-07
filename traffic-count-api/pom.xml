@@ -10,6 +10,7 @@
 	<artifactId>traffic-count-api</artifactId>
 	<name>traffic-count-api</name>
 	<description>Api Module</description>
+	<packaging>war</packaging>
 	<properties>
 		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
 	</properties>
