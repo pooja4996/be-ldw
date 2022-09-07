@@ -13,5 +13,5 @@ phases:
         - echo "Build Stage Completed..."
 artifacts:
       files:
-        - traffic-count-api/target/traffic-count-api.jar
+        - traffic-count-api/target/traffic-count-api.war
       discard-paths: yes
